@@ -1,3 +1,27 @@
+<?php
+      if(isset($_POST["name"]))
+      {
+        $name=$_POST["name"];
+      }
+      if(isset($_POST["email"]))
+      {
+        $email=$_POST["email"];
+      }
+      if(isset($_POST["subject"]))
+      {
+        $subject=$_POST["subject"];
+      }
+      if(isset($_POST["message"]))
+      {
+        $message=$_POST["message"];
+      }
+      if(isset($_REQUEST["submit"]))
+      {
+      $headers = "From: " . $name . " <" . $email . ">\r\n" . "Reply-To: " . $email . "\r\n";
+      $result=mail("sinisa.bubonja@gmail.com", $subject, $message, $headers);
+    }
+ ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -37,7 +61,7 @@
 
         <div id="contact">
             <div id="contact-form">
-                <form action="" method="post" enctype="text/plain">
+                <form action="" method="post">
                     Name:
                     <br>
                     <input type="text" name="name"></input>
@@ -51,7 +75,7 @@
                     <br>
                     <textarea name="message" value="Your message"></textarea>
                     <br>
-                    <input type="submit" value="Send email">
+                    <input type="submit" name="submit" value="Send email">
                 </form>
             </div>
 
