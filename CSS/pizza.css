@@ -111,14 +111,12 @@ p.slogan {
     width: 950px;
     height: 631px;
 }
-
 #about {
     width: 950px;
     height: auto;
-    padding-top:54px;
+    padding-top: 54px;
     position: relative;
 }
-
 #images-gallery {
     border: 1px solid #8d215c;
     float: left;
@@ -156,7 +154,7 @@ p.slogan {
     z-index: 1;
 }
 .text {
-    margin-top:0px;
+    margin-top: 0px;
     font-family: Georgia, serif;
     font-size: 16px;
     color: #E6C01F;
@@ -325,43 +323,43 @@ form input[type=submit] {
     opacity: 0.85;
     border: 1px ridge #A88C6A;
 }
-
-#message{
-  display:none;
-  width:100%;
-  height:100%;
-  opacity:0.62;
-  background-color:black;
-  color:white;
-position:fixed;
-z-index:5;
+#message {
+    width: 100%;
+    height: 100%;
+    opacity: 0.62;
+    background-color: black;
+    color: white;
+    position: fixed;
+    z-index: 4;
 }
-
-#message-text{
-  top:38%;
-  left:50%;
-  margin-left:-100px;
-  font-family:"Lucida Console", Monaco, monospace;
-  font-size: 14px;
-  position:relative;
+#message-text {
+    top: 38%;
+    left: 50%;
+    margin-left: -100px;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    position: relative;
 }
-
 #footer {
     clear: both;
     width: 950px;
     height: auto;
     color: white;
-    left:50%;
-    margin-left:-475px;
+    left: 50%;
+    margin-left: -475px;
+    text-align:center;
+    font-size:12px;
+    font-family: Georgia, serif;
     position: relative;
-    border:1px solid blue;
+    border: 1px solid #341F29;
 }
-
-#background-footer{
-  width:100%;
-  height:auto;
-  margin-top: 34px;
-  border:1px solid red;
-  position:relative;
-  background-color: #341F29;
+#background-footer {
+    width: 100%;
+    height: auto;
+    margin-top: 34px;
+    position: relative;
+    padding-top:54px;
+    padding-bottom:86px;
+    background-color: #341F29;
+    color:#F0DFFA;
 }

@@ -1,25 +1,25 @@
 <?php
 
-      if(isset($_POST['name']))
+      if(isset($_POST["name"]))
       {
-        $name=$_POST['name'];
+        $name=$_POST["name"];
       }
-      if(isset($_POST['email']))
+      if(isset($_POST["email"]))
       {
-        $email=$_POST['email'];
+        $email=$_POST["email"];
       }
-      if(isset($_POST['subject']))
+      if(isset($_POST["subject"]))
       {
-        $subject=$_POST['subject'];
+        $subject=$_POST["subject"];
       }
-      if(isset($_POST['message']))
+      if(isset($_POST["message"]))
       {
-        $message=$_POST['message'];
+        $message=$_POST["message"];
       }
-      if(isset($_REQUEST['submit']))
+      if(isset($_REQUEST["submit"]))
       {
-      $headers = 'From: ' . $name . ' <' . $email . '>\r\n' . 'Reply-To: ' . $email . '\r\n';
-      $result=mail('sinisa.bubonja@gmail.com', $subject, $message, $headers);
+      $headers = "From: " . $name . " <" . $email . ">\r\n" . "Reply-To: " . $email . "\r\n";
+      $result=mail("sinisa.bubonja@gmail.com", $subject, $message, $headers);
     }
 
     echo "<!DOCTYPE html>
@@ -28,14 +28,12 @@
     <head>
         <title>Pizza Bubonja's</title>
         <link rel='stylesheet' type='text/css' href='../CSS/pizza.css'>
-        <script src='http://maps.googleapis.com/maps/api/js?key=AIzaSyD_LagaHj7Jqhui85MHrb5p5KhwOT4hhZg&callback=initMap'></script>
-        <script src='JS/myScript.js' type='text/javascript'></script>
         <meta charset='UTF-8'>
     </head>
 
     <body>
 
-      <div id='message' style='display:block;'><p id='message-text'>Your message has been sent.</p></div>
+        <div id='message'><p id='message-text'>Your message has been send.</p></div>
 
         <div id='background-header' style='position:absolute;'></div>
 
@@ -58,12 +56,9 @@
 
             <div id='empty'></div>
 
-            <!--<img id='contact' src='Images/contactUs.png' alt='Contact Us'/>
-    <img id='chef' src='Images/chef.png' alt='Chef'/>-->
-
             <div id='contact'>
                 <div id='contact-form'>
-                    <form action='../pizzabubonjas/PHP/mail.php' method='post' target='_self'>
+                    <form action='' method='post' target='_self'>
                         Name:
                         <br>
                         <input type='text' name='name'></input>
@@ -102,7 +97,13 @@
 
             </div>
 
+        </div>
+
+        <div id='background-footer'>
+
             <div id='footer'>
+                <p>Please contact Sinisa Bubonja at sinisa.bubonja@gmail.com with problems or questions about this web page.</p>
+                <p>DISCLAIMER: <em>Pizza Bubonja's</em> is not real restaurant. This website is part of my portfolio and is completely fictional.</p>
                 <p>&copy; 2016 Pizza Bubonja's. All Rights Reserved.</p>
             </div>
 
