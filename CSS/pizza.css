@@ -2,8 +2,13 @@ html, body {
     margin: 0;
     padding: 0;
 }
+html {
+    height: 100%;
+}
 body {
     background-color: #8D2126;
+    position: relative;
+    min-height: 100%;
 }
 #background-header {
     width: 100%;
@@ -345,7 +350,7 @@ form input[type=submit] {
     font-size: 14px;
     position: relative;
 }
-#footer {
+.footer {
     clear: both;
     width: 950px;
     height: auto;
@@ -359,6 +364,18 @@ form input[type=submit] {
     border: 1px solid #341F29;
 }
 #background-footer {
+    width: 100%;
+    height: auto;
+    margin-top: 34px;
+    position: absolute;
+    bottom: 0px;
+    padding-top: 54px;
+    padding-bottom: 86px;
+    background-color: #341F29;
+    color: #F0DFFA;
+}
+#background-footer-hidden {
+    visibility: hidden;
     width: 100%;
     height: auto;
     margin-top: 34px;
