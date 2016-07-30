@@ -313,15 +313,20 @@ form input[type=submit] {
     color: #3C2B22;
     opacity: 0.85;
 }
-#map {
+#map-container {
+    overflow: hidden;
     clear: both;
     margin-top: 190px;
     margin-left: 36px;
     position: relative;
     width: 480px;
     height: 300px;
-    opacity: 0.85;
     border: 1px ridge #A88C6A;
+}
+#map {
+    width: 480px;
+    height: 300px;
+    opacity: 0.85;
 }
 #message {
     width: 100%;
@@ -347,8 +352,8 @@ form input[type=submit] {
     color: white;
     left: 50%;
     margin-left: -475px;
-    text-align:center;
-    font-size:12px;
+    text-align: center;
+    font-size: 12px;
     font-family: Georgia, serif;
     position: relative;
     border: 1px solid #341F29;
@@ -358,8 +363,8 @@ form input[type=submit] {
     height: auto;
     margin-top: 34px;
     position: relative;
-    padding-top:54px;
-    padding-bottom:86px;
+    padding-top: 54px;
+    padding-bottom: 86px;
     background-color: #341F29;
-    color:#F0DFFA;
+    color: #F0DFFA;
 }
