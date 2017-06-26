@@ -1,8 +1,6 @@
-# pizzabubonjas
+# Pizza Bubonja's
 Python Flask, HTML, CSS, JS / Restaurant website
-
-
-
+<br/><br/><br/>
 
 Pizza Bubonja's is not real restaurant. This website is part of my portfolio and is completely fictional.
 
