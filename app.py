@@ -68,5 +68,5 @@ def send():
     #Notification of email sending
     return redirect('/Mail.html')
 
-if __name__=='__main__':
-    app.run(debug=True)
+#if __name__=='__main__':
+    #app.run(debug=True)
