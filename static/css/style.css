@@ -1,387 +1,184 @@
-html, body {
-    margin: 0;
-    padding: 0;
-}
-html {
-    height: 100%;
-}
 body {
-    background-color: #8D2126;
-    position: relative;
-    min-height: 100%;
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  }
+
+.Header{
+  width: auto;
+  background-image: url('/src/Background1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+  /*
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  border-bottom-color: 2px solid black;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  text-overflow: ellipsis;
+  justify-content: center;
+  overflow: hidden;
+  white-space: nowrap;
+  */
 }
-#background-header {
-    width: 100%;
-    height: 139px;
-    background-color: #F0DFFA;
-    border-bottom: 1px solid #C7A3C2;
-    z-index: -1;
-    position: fixed;
+.Page-Title{
+  color: #d11515df;
+  display: inline;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px #f31b1b;
+  animation: TitleAnimate 3s infinite;
 }
-#container {
-    width: 950px;
-    height: auto;
-    left: 50%;
-    margin-left: -475px;
-    position: relative;
-    z-index: 2;
+
+@keyframes TitleAnimate{
+  0% {
+    color: green;
+  }
+  50% {
+    color: yellow;
+  }
+  100% {
+    color: violet;
+  }
 }
-#header {
-    width: 950px;
-    height: 139px;
-    background-color: #F0DFFA;
-    border-bottom: 1px solid #C7A3C2;
-    left: 50%;
-    margin-left: -475px;
-    position: fixed;
+
+.First-Letter{
+  font-size: 40px;
+  font-weight: bold;
 }
-#empty {
-    width: 950px;
-    height: 139px;
-    position: static;
+
+.CommentTt{
+  font-size: 10px;
+  color: white;
+  padding: 0px 0px 10px 20px;
+  text-decoration: underline;
 }
-#logo {
-    float: left;
-    width: 323px;
-    height: 131px;
-    margin-bottom: 5px;
-    margin-left: 3px;
-    margin-top: 3px;
+
+.Content{
+  padding-top: 10px;
+  height: 100px;
+  height: 500px;
+  background-image: url('/src/Image2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
 }
-p.slogan {
-    float: right;
-    font-size: 22px;
-    font-style: italic;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    color: #341F29;
+
+.CryptoNewsOut{
+  /*background-image: url('/src/Image3.jpg');*/
+  height: auto;
+  padding: 10px 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
 }
-#ul-header {
-    overflow: hidden;
-    list-style-type: none;
-    clear: right;
-    float: right;
-    padding: 0px 0px 0px 0px;
-    background-color: #341F29;
-    border-color: #792D28;
-    border-style: ridge;
-    opacity: 1;
+  
+.CryptoNewsTitle{
+  color: #c92727;
+  text-shadow: 1px 1px 1px #c92727;
+  text-align: center;
+  font-weight: bold;
+  margin: 5px;
+  
 }
-#ul-header li {
-    float: left;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    font-weight: bold;
-    font-size: 25px;
+  
+.CryptoNewsIn{
+  /*text-align: center;*/
+  color: white;
+  background-color: #fbfafb31;
+  border: 0.1px solid black;
+  -webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
+  backdrop-filter: blur(8px);
 }
-#ul-header li a {
-    text-decoration: none;
-    list-style-position: inside;
-    display: block;
-    text-align: center;
-    padding-right: 12px;
-    padding-left: 12px;
-    color: #CBAABC;
+
+.Footer{
+  background-color: #000000;
+  height: auto;
 }
-#ul-header li:nth-child(1) {
-    border-right: 1px solid #8A6578;
+
+.AboutInvestment{
+  padding: 0px 60px;
 }
-#ul-header li:nth-child(2) {
-    border-right: 1px solid #8A6578;
+
+.TitleInevstment{
+  padding: 5px;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 20px;
+  color: #b212c3;
+  text-shadow: 1px 1px 2px #fbfbfb;
 }
-#ul-header li:nth-child(3) {
-    border-right: 1px solid #8A6578;
+
+.SummaryInvestment{
+  color: #0e0e0ed9;
+  text-shadow: 1px 1px 2px #f31b1b;
 }
-#ul-header li a:hover {
-    background-color: #8C382A;
-    color: white;
+
+.WebMenu div{
+  display: inline-block;
+  border: 0.1px dotted black;
+  margin: 5px;
+  padding: 2px;
 }
-.active {
-    text-decoration: none;
-    list-style-position: inside;
-    display: block;
-    text-align: center;
-    padding-right: 12px;
-    padding-left: 12px;
-    color: #CBAABC;
-    background-color: #31442A;
+
+.WebMenu div:hover{
+  font-weight: bold;
+  color: red;
+  border-top: 1px solid red;
+  border-bottom:1px solid red;
 }
-#background-restaurant {
-    width: 950px;
-    height: 631px;
-    left: 50%;
-    margin-left: -475px;
-    position: relative;
-    z-index: -1;
+.WebMenu{
+  color: white;
+  text-align: center;
+  margin-top: 15px;
 }
-#restaurant {
-    width: 950px;
-    height: 631px;
+
+.Copyright{
+  text-align: center;
+  color: white;
+  padding: 10px;
 }
-#about {
-    width: 950px;
-    height: auto;
-    padding-top: 54px;
-    position: relative;
+
+.D-Watch1{
+  text-align: center;
+  padding: 10px;
 }
-#images-gallery {
-    border: 1px solid #8d215c;
-    float: left;
-    width: 590px;
-    height: 364px;
-    margin-left: 21px;
-    margin-right: 13px;
-    margin-bottom: 13px;
-    position: relative;
+  
+.D-Watch{
+  color: #f9fab6;
+  text-shadow: 2px 2px 2px red;
+  border: 2px solid black;
+  padding: 3px;
 }
-#gallery1 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    opacity: 1;
+
+.ExampleDesign{
+  margin: 2px;
+  /*text-align: center;
+  align-items: center;
+  justify-content: center;*/
 }
-#gallery2 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    opacity: 0;
+.BlockDesign{
+  border-radius: 30px;
+  margin: 1px auto;
+  padding: 7px;
+  align-self: center;
+  height: auto;
+  width: 210px;
+  text-align: center;
+  background-color: #8E35EF;
 }
-#previous {
-    float: left;
-    position: relative;
-    top: 148px;
-    opacity: 0.62;
-    z-index: 1;
+.ExampleDesignImg{
+  height: 200px;
+  margin-bottom: -15px;
+  padding-bottom: 2px;
 }
-#nextt {
-    float: right;
-    position: relative;
-    top: 148px;
-    opacity: 0.62;
-    z-index: 1;
-}
-.text {
-    margin-top: 0px;
-    font-family: Georgia, serif;
-    font-size: 16px;
-    color: #E6C01F;
-    text-align: justify;
-    padding-left: 34px;
-    padding-right: 34px;
-    position: relative;
-}
-span {
-    font-style: italic;
-}
-table {
-    margin-left: 34px;
-    margin-right: 34px;
-    margin-top: 54px;
-    border-spacing: 0px;
-}
-#first-row {
-    height: 54px;
-    color: #E6C01F;
-    font-family: Georgia, serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: bold;
-}
-tr:nth-child(even) {
-    background-color: #FE7847;
-    color: #6c0a00;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-}
-tr:nth-child(odd) {
-    color: #E6C01F;
-    font-family: "Times New Roman", Times, serif;
-    font-style: italic;
-    font-size: 15px;
-}
-th {
-    width: 165px;
-    text-align: right;
-    padding: 0 13px;
-}
-td {
-    width: 165px;
-    text-align: right;
-    padding: 0 13px;
-}
-.first-col {
-    width: 552px;
-    height: 21px;
-    text-align: left;
-}
-.pizza {
-    width: 552px;
-    height: 34px;
-    text-align: center;
-}
-#contact {
-    overflow: hidden;
-    width: 854px;
-    height: 517px;
-    margin-left: 34px;
-    margin-top: 54px;
-    padding: 13px;
-    padding-bottom: 21px;
-    background-image: url("../img/chef-pizza.png");
-    background-color: #D7BA81;
-    border: 1px solid #8d215c;
-}
-#contact-form {
-    float: left;
-    width: 283px;
-    height: auto;
-    margin-left: 24px;
-    margin-top: 21px;
-    position: absolute;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    color: #3C2B22;
-}
-#contact-inf {
-    float: right;
-    width: 540px;
-    height: auto;
-    position: relative;
-}
-form {
-    width: 283px;
-    height: auto;
-}
-form input {
-    margin-top: 2px;
-    margin-bottom: 3px;
-    padding: 0px;
-}
-form textarea {
-    width: 281px;
-    height: 177px;
-    margin-top: 2px;
-    margin-bottom: 3px;
-    font-family: Georgia, serif;
-    font-size: 14px;
-    padding: 0px;
-    background-color: #DBCDC4;
-    border: 1px inset #A88C6A;
-    opacity: 0.85;
-}
-form input[type=text] {
-    width: 177px;
-    height: 22px;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 14px;
-    background-color: #DBCDC4;
-    border: 1px inset #A88C6A;
-    opacity: 0.85;
-}
-form input[type=submit] {
-    width: 111px;
-    height: 26px;
-    margin-left: 91px;
-    margin-top: 8px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    background-color: #D7BA81;
-    color: #3C2B22;
-    border: 2px groove #B52714;
-    opacity: 0.85;
-}
-#address {
-    float: left;
-    width: 178px;
-    height: 111px;
-    font-size: 14px;
-    font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #3C2B22;
-    opacity: 0.85;
-}
-#phone {
-    float: left;
-    width: 178px;
-    height: 111px;
-    font-size: 14px;
-    font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #3C2B22;
-    opacity: 0.85;
-}
-#email {
-    float: left;
-    width: 178px;
-    height: 111px;
-    font-size: 14px;
-    font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #3C2B22;
-    opacity: 0.85;
-}
-#map-container {
-    overflow: hidden;
-    clear: both;
-    margin-top: 190px;
-    margin-left: 36px;
-    position: relative;
-    width: 480px;
-    height: 300px;
-    border: 1px ridge #A88C6A;
-}
-#map {
-    width: 480px;
-    height: 300px;
-    opacity: 0.85;
-}
-#message {
-    width: 100%;
-    height: 100%;
-    opacity: 0.62;
-    background-color: black;
-    color: white;
-    position: fixed;
-    z-index: 4;
-}
-#message-text {
-    top: 38%;
-    left: 50%;
-    margin-left: -100px;
-    font-family: "Lucida Console", Monaco, monospace;
-    font-size: 14px;
-    position: relative;
-}
-.footer {
-    clear: both;
-    width: 950px;
-    height: auto;
-    color: white;
-    left: 50%;
-    margin-left: -475px;
-    text-align: center;
-    font-size: 12px;
-    font-family: Georgia, serif;
-    position: relative;
-    border: 1px solid #341F29;
-}
-#background-footer {
-    width: 100%;
-    height: auto;
-    margin-top: 34px;
-    position: absolute;
-    bottom: 0px;
-    padding-top: 54px;
-    padding-bottom: 86px;
-    background-color: #341F29;
-    color: #F0DFFA;
-}
-#background-footer-hidden {
-    visibility: hidden;
-    width: 100%;
-    height: auto;
-    margin-top: 34px;
-    position: relative;
-    padding-top: 54px;
-    padding-bottom: 86px;
-    background-color: #341F29;
-    color: #F0DFFA;
+.ExampleDesignImgTitle{
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
 }
